@@ -223,7 +223,7 @@ def SetBrickletIlluminance(Unit):
         Domoticz.Debug("SetBrickletIlluminance: OK")
     except:
         Domoticz.Error("[ERROR] SetBrickletIlluminance failed. Check bricklet.")
-    return illuminance
+    return
 
 # Generic helper functions
 
