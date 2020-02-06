@@ -52,7 +52,7 @@ import urllib.request
 # Amend the import path to enable using the Tinkerforge libraries
 # Alternate (ensure to update in case newer Python API bindings):
 # create folder tinkerforge and copy the binding content, i.e.
-# /home/pi/domoticz/plugins/TFRGBLEDV2
+# /home/pi/domoticz/plugins/TFAMBIENTLIGHTV2
 from os import path
 import sys
 sys.path
@@ -128,7 +128,6 @@ class BasePlugin:
 
     def onHeartbeat(self):
         Domoticz.Debug("onHeartbeat called")
-        # NOT USED = PLACEHOLDER
         self.HeartbeatCounter = self.HeartbeatCounter + 1
         Domoticz.Debug("onHeartbeat called. Counter=" + str(self.HeartbeatCounter * self.HeartbeatInterval) + " (Heartbeat=" + Parameters["Mode5"] + ")")
         # check the heartbeatcounter against the heartbeatinterval
