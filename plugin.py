@@ -202,9 +202,9 @@ def SetBrickletConfiguration():
     return
     """
 
-# Get the illuminance of the bricklet
+# Get bricklet illuminance value & set domoticz lux device
 def SetBrickletIlluminance(Unit):
-    Domoticz.Debug("GetBrickletIlluminance: Unit " + str(Unit) + ", ID="+str(Devices[Unit].ID) )
+    Domoticz.Debug("SetBrickletIlluminance: Unit " + str(Unit) + ", ID="+str(Devices[Unit].ID) )
     try:
         # Create IP connection
         ipConn = IPConnection()
@@ -220,7 +220,7 @@ def SetBrickletIlluminance(Unit):
         Domoticz.Log("Illuminance updated: "+str(illuminance))
         # Disconnect
         ipConn.disconnect()
-        Domoticz.Debug("GetBrickletIlluminance: OK")
+        Domoticz.Debug("SetBrickletIlluminance: OK")
     except:
         Domoticz.Error("[ERROR] SetBrickletIlluminance failed. Check bricklet.")
     return illuminance
