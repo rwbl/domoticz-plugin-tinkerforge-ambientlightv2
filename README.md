@@ -64,9 +64,9 @@ This is required to add the new hardware with its device and monitor if the plug
 It is imporant, that the GUI > Setup > Hardware accepts new devices!
 
 ## Create folder
-The folder name is the same as the key property of the plugin (i.e. plugin key="TFAMBIENTLIGHTLV2").
+The folder name is the same as the key property of the plugin (i.e. plugin key="tfambientlightlv2").
 ```
-cd /home/pi/domoticz/plugins/TFAMBIENTLIGHTLV2
+cd /home/pi/domoticz/plugins/tfambientlightlv2
 ```
 
 ## Create the plugin
@@ -123,7 +123,7 @@ Ensure to update the files in case of newer Tinkerforge Python Bindings.
 
 ## Make plugin.py executable
 ```
-cd /home/pi/domoticz/plugins/TFAMBIENTLIGHTLV2
+cd /home/pi/domoticz/plugins/tfambientlightlv2
 chmod +x plugin.py
 ```
 
@@ -152,7 +152,7 @@ After adding,ensure to check the Domoticz Log (GUI Setup > Log)
 ```
 2020-02-06 10:55:15.156 (TFALV2) Debug logging mask set to: PYTHON PLUGIN QUEUE IMAGE DEVICE CONNECTION MESSAGE ALL 
 2020-02-06 10:55:15.156 (TFALV2) 'HardwareID':'8' 
-2020-02-06 10:55:15.156 (TFALV2) 'HomeFolder':'/home/pi/domoticz/plugins/TFAMBIENTLIGHTLV2/' 
+2020-02-06 10:55:15.156 (TFALV2) 'HomeFolder':'/home/pi/domoticz/plugins/tfambientlightlv2/' 
 2020-02-06 10:55:15.156 (TFALV2) 'StartupFolder':'/home/pi/domoticz/' 
 2020-02-06 10:55:15.156 (TFALV2) 'UserDataFolder':'/home/pi/domoticz/' 
 2020-02-06 10:55:15.156 (TFALV2) 'Database':'/home/pi/domoticz/domoticz.db' 
@@ -162,7 +162,7 @@ After adding,ensure to check the Domoticz Log (GUI Setup > Log)
 2020-02-06 10:55:15.156 (TFALV2) 'Name':'TFALV2' 
 2020-02-06 10:55:15.156 (TFALV2) 'Address':'127.0.0.1' 
 2020-02-06 10:55:15.156 (TFALV2) 'Port':'4223' 
-2020-02-06 10:55:15.156 (TFALV2) 'Key':'TFAMBIENTLIGHTLV2' 
+2020-02-06 10:55:15.156 (TFALV2) 'Key':'tfambientlightlv2' 
 2020-02-06 10:55:15.156 (TFALV2) 'Mode1':'yyc' 
 2020-02-06 10:55:15.156 (TFALV2) 'Mode5':'60' 
 2020-02-06 10:55:15.156 (TFALV2) 'Mode6':'Debug' 
@@ -198,7 +198,7 @@ Heartbeat every minute.
 ```
 2020-02-06 11:00:42.459 (TFALV2) Debug logging mask set to: PYTHON PLUGIN QUEUE IMAGE DEVICE CONNECTION MESSAGE ALL 
 2020-02-06 11:00:42.459 (TFALV2) 'HardwareID':'8' 
-2020-02-06 11:00:42.459 (TFALV2) 'HomeFolder':'/home/pi/domoticz/plugins/TFAMBIENTLIGHTLV2/' 
+2020-02-06 11:00:42.459 (TFALV2) 'HomeFolder':'/home/pi/domoticz/plugins/tfambientlightlv2/' 
 2020-02-06 11:00:42.459 (TFALV2) 'StartupFolder':'/home/pi/domoticz/' 
 2020-02-06 11:00:42.459 (TFALV2) 'UserDataFolder':'/home/pi/domoticz/' 
 2020-02-06 11:00:42.459 (TFALV2) 'Database':'/home/pi/domoticz/domoticz.db' 
@@ -208,7 +208,7 @@ Heartbeat every minute.
 2020-02-06 11:00:42.459 (TFALV2) 'Name':'TFALV2' 
 2020-02-06 11:00:42.459 (TFALV2) 'Address':'127.0.0.1' 
 2020-02-06 11:00:42.459 (TFALV2) 'Port':'4223' 
-2020-02-06 11:00:42.459 (TFALV2) 'Key':'TFAMBIENTLIGHTLV2' 
+2020-02-06 11:00:42.459 (TFALV2) 'Key':'tfambientlightlv2' 
 2020-02-06 11:00:42.459 (TFALV2) 'Mode1':'yyc' 
 2020-02-06 11:00:42.459 (TFALV2) 'Mode5':'300' 
 2020-02-06 11:00:42.459 (TFALV2) 'Mode6':'Debug' 

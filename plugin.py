@@ -15,7 +15,7 @@
 # https://www.tinkerforge.com/en/doc/Software/Bricklets/AmbientLightV2_Bricklet_Python.html#ambient-light-v2-bricklet-python-api
 
 """
-<plugin key="TFAMBIENTLIGHTLV2" name="Tinkerforge Ambient Light Bricklet 2.0" author="rwbL" version="1.0.0">
+<plugin key="tfambientlightlv2" name="Tinkerforge Ambient Light Bricklet 2.0" author="rwbL" version="1.0.0">
     <description>
         <h2>Tinkerforge Ambient Light 2.0</h2><br/>
         This bricklet measures in regular intervals, the ambient light in lux.<br/>
@@ -128,6 +128,7 @@ class BasePlugin:
 
     def onHeartbeat(self):
         Domoticz.Debug("onHeartbeat called")
+        # NOT USED = PLACEHOLDER
         self.HeartbeatCounter = self.HeartbeatCounter + 1
         Domoticz.Debug("onHeartbeat called. Counter=" + str(self.HeartbeatCounter * self.HeartbeatInterval) + " (Heartbeat=" + Parameters["Mode5"] + ")")
         # check the heartbeatcounter against the heartbeatinterval
@@ -202,9 +203,9 @@ def SetBrickletConfiguration():
     return
     """
 
-# Get bricklet illuminance value & set domoticz lux device
+# Get the illuminance of the bricklet
 def SetBrickletIlluminance(Unit):
-    Domoticz.Debug("SetBrickletIlluminance: Unit " + str(Unit) + ", ID="+str(Devices[Unit].ID) )
+    Domoticz.Debug("GetBrickletIlluminance: Unit " + str(Unit) + ", ID="+str(Devices[Unit].ID) )
     try:
         # Create IP connection
         ipConn = IPConnection()
@@ -220,10 +221,10 @@ def SetBrickletIlluminance(Unit):
         Domoticz.Log("Illuminance updated: "+str(illuminance))
         # Disconnect
         ipConn.disconnect()
-        Domoticz.Debug("SetBrickletIlluminance: OK")
+        Domoticz.Debug("GetBrickletIlluminance: OK")
     except:
         Domoticz.Error("[ERROR] SetBrickletIlluminance failed. Check bricklet.")
-    return
+    return illuminance
 
 # Generic helper functions
 
